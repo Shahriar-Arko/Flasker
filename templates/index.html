@@ -1,0 +1,17 @@
+<h1> hello world </h1>
+<p> this is my first page </p>
+<p>my name is {{first_name}}</p> 
+<h3>fav_pizza:</h3>
+
+{% for topping in fav_pizza %}
+	{% if topping == 41 %}
+		{{topping+100}}<br/>
+	{% else %}
+		{{topping}}<br/>
+	{% endif %}
+	
+	
+{% endfor %}
+
+<br/>
+{{ fav_pizza.0}}
